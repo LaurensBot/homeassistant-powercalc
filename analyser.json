@@ -1,0 +1,65 @@
+{
+  "activities": [
+    {
+      "activity": "charging",
+      "coverage": 1.0,
+      "energy_bias_percent": 2.53,
+      "energy_duration_seconds": 1230.986,
+      "episode_count": 10,
+      "mae_w": 27.865,
+      "mean_power_w": 86.33050259965337,
+      "measured_energy_wh": 29.6335,
+      "predicted_energy_wh": 30.3825,
+      "sample_count": 10916,
+      "transition_mae_w": 60.48,
+      "validation_count": 577
+    },
+    {
+      "activity": "away",
+      "coverage": 1.0,
+      "energy_bias_percent": -2.93,
+      "energy_duration_seconds": 706.765,
+      "episode_count": 7,
+      "mae_w": 0.143,
+      "mean_power_w": 0.66431718061674,
+      "measured_energy_wh": 0.1213,
+      "predicted_energy_wh": 0.1178,
+      "sample_count": 1620,
+      "transition_mae_w": 1.933,
+      "validation_count": 227
+    },
+    {
+      "activity": "auto_emptying",
+      "coverage": 1.0,
+      "energy_bias_percent": 2.47,
+      "energy_duration_seconds": 29.722,
+      "episode_count": 4,
+      "mae_w": 231.4,
+      "mean_power_w": 985.4466666666667,
+      "measured_energy_wh": 8.5216,
+      "predicted_energy_wh": 8.7323,
+      "sample_count": 63,
+      "transition_mae_w": 718.3,
+      "validation_count": 15
+    },
+    {
+      "activity": "washing",
+      "coverage": 1.0,
+      "energy_bias_percent": -2.38,
+      "energy_duration_seconds": 362.98,
+      "episode_count": 3,
+      "mae_w": 3.42,
+      "mean_power_w": 10.373684210526317,
+      "measured_energy_wh": 1.0484,
+      "predicted_energy_wh": 1.0234,
+      "sample_count": 269,
+      "transition_mae_w": 5.675,
+      "validation_count": 171
+    }
+  ],
+  "reason": "The charging validation error exceeds 17.27 W; record repeated isolated cycles and active charging/washing/drying entities (settings switches are not activity signals)",
+  "sample_count": 12868,
+  "schema_version": 1,
+  "status": "insufficient_data",
+  "validation_method": "held_out_recording"
+}
