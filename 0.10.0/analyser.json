@@ -1,0 +1,7 @@
+{
+  "reason": "Charging needs at least three battery ranges with three training samples each",
+  "sample_count": 17288,
+  "schema_version": 1,
+  "status": "insufficient_data",
+  "validation_method": "held_out_recording"
+}
