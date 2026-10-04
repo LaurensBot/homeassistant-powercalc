@@ -1,7 +1,79 @@
 {
-  "reason": "Charging needs at least three battery ranges with three training samples each",
-  "sample_count": 17288,
+  "activities": [
+    {
+      "activity": "charging",
+      "coverage": 1.0,
+      "energy_bias_percent": -12.27,
+      "energy_duration_seconds": 816.242,
+      "episode_count": 12,
+      "mae_w": 1.139,
+      "mean_power_w": 4.295584415584416,
+      "measured_energy_wh": 0.9557,
+      "predicted_energy_wh": 0.8385,
+      "sample_count": 10732,
+      "transition_mae_w": 9.791,
+      "validation_count": 385
+    },
+    {
+      "activity": "away",
+      "coverage": 1.0,
+      "energy_bias_percent": 0.45,
+      "energy_duration_seconds": 10228.611,
+      "episode_count": 15,
+      "mae_w": 0.069,
+      "mean_power_w": 0.557410450213605,
+      "measured_energy_wh": 1.5557,
+      "predicted_energy_wh": 1.5627,
+      "sample_count": 4924,
+      "transition_mae_w": 1.7,
+      "validation_count": 3043
+    },
+    {
+      "activity": "washing",
+      "coverage": 1.0,
+      "energy_bias_percent": 0.36,
+      "energy_duration_seconds": 872.604,
+      "episode_count": 10,
+      "mae_w": 3.406,
+      "mean_power_w": 10.412621359223301,
+      "measured_energy_wh": 2.5335,
+      "predicted_energy_wh": 2.5427,
+      "sample_count": 777,
+      "transition_mae_w": 4.86,
+      "validation_count": 412
+    },
+    {
+      "activity": "drying",
+      "coverage": 1.0,
+      "energy_bias_percent": -9.36,
+      "energy_duration_seconds": 13920.031,
+      "episode_count": 4,
+      "mae_w": 44.622,
+      "mean_power_w": 64.53731595092025,
+      "measured_energy_wh": 249.1775,
+      "predicted_energy_wh": 225.8525,
+      "sample_count": 13231,
+      "transition_mae_w": 38.33,
+      "validation_count": 6520
+    },
+    {
+      "activity": "auto_emptying",
+      "coverage": 1.0,
+      "energy_bias_percent": 6.51,
+      "energy_duration_seconds": 59.992,
+      "episode_count": 5,
+      "mae_w": 165.888,
+      "mean_power_w": 920.1066666666667,
+      "measured_energy_wh": 15.8079,
+      "predicted_energy_wh": 16.837,
+      "sample_count": 75,
+      "transition_mae_w": 506.655,
+      "validation_count": 30
+    }
+  ],
+  "reason": "The charging validation error exceeds 0.86 W; record repeated, complete charging cycles and the entities that report this activity",
+  "sample_count": 29739,
   "schema_version": 1,
   "status": "insufficient_data",
-  "validation_method": "held_out_recording"
+  "validation_method": "held_out_episodes"
 }
